@@ -40,7 +40,7 @@ jobs:
 
     - name: Install Microsoft Teams
       run: |
-          sudo /bin/sh -c 'wget https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.4.00.26453_amd64.deb -O /usr/share/teams.deb'
+          sudo /bin/sh -c 'wget https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.5.00.10453_amd64.deb -O /usr/share/teams.deb'
           sudo apt install /usr/share/teams.deb
 
     - name: Install Playwright
