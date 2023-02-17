@@ -10,7 +10,7 @@ git clone https://github.com/reidav/msteams-playwright.git
 cd msteams-playwright
 npm install
 npx playwright test
-```
+```test
 
 ![Authentication](https://github.com/reidav/msteams-playwright/blob/main/docs/assets/demo.gif?raw=true)
 
