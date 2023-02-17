@@ -7,8 +7,9 @@ const config: PlaywrightTestConfig = {
     timeout: 60 * 1000,
   },
   use: {
-    actionTimeout: 0,
-    trace: 'on-first-retry',
+    trace: 'on',
+    screenshot: 'on'
+    reporter: [['html', { open: 'never' }]],
   },
 };
 
