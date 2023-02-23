@@ -20,10 +20,12 @@ export class MSTeamsDesktop {
         this.electronApp = await electron.launch({
             executablePath: "/usr/share/teams/teams"
         });
+        
+        console.log('found teams');
 
         // Wait for get_started_window
         let first_window = await this.electronApp.firstWindow();
-
+        console.log('found window');
         // Fill the get_started_window
         let get_started_window = await this.waitForPageWithFrame("file:///usr/share/teams/resources/app.asar/lib/renderer/preLogin/accountSelect.html")
         await get_started_window.locator('[aria-label="Select\\ an\\ account\\ to\\ sign\\ in\\ to\\ Teams"]').click();
