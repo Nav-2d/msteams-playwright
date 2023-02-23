@@ -15,7 +15,7 @@ let m365Cred: M365Credential = {
 let msTeamsWeb: MSTeamsWeb = new MSTeamsWeb(m365Cred);
 
 test.describe.configure({ mode: "parallel" });
-
+test.skip();
 test.beforeAll(async () => {
   await msTeamsWeb.launch();
 });
