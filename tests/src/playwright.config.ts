@@ -9,8 +9,8 @@ const config: PlaywrightTestConfig = {
   use: {
     trace: 'on',
     screenshot: 'on'
-    reporter: [['html', { open: 'never' }]],
   },
+  reporter: [['html', { open: 'never' }]],
 };
 
 export default config;
